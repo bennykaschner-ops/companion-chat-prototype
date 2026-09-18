@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Companion Chat Prototype</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Companion Chat <span class="tag">prototype</span></h1>
+      <select id="persona-select"></select>
+    </header>
+
+    <div id="messages" class="messages"></div>
+
+    <div id="nudge" class="nudge hidden"></div>
+
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" type="text" placeholder="Say something..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+
+    <footer>mode: <span id="mode-indicator">-</span></footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
